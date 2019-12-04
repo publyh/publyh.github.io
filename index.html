@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colorbox.css">
     <script src="https://kit.fontawesome.com/c0a4f60b2e.js" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script/jquery.colorbox-min.js"></script>
     <script src='script/main.js'></script>
     <title>JHPortfolio</title>
 </head>
@@ -19,7 +21,9 @@
         <header>
             <div class="header_wrap">
                 <div class="logo">
-                    <a href="#"><p>jhportfolio</p></a>
+                    <a href="#">
+                        <p>jhportfolio</p>
+                    </a>
                 </div>
                 <ul class="gnb">
                     <li><a href="#">profile</a></li>
@@ -67,35 +71,59 @@
                 <div class="preview">
                     <h3>preview</h3>
                     <ul class="preview_img">
-                        <li><img src="images/port_img1.png" alt=""></li>
-                        <li></li>
-                        <li></li>
+                        <li><img src="images/port_img1_2.png" alt=""></li>
+                        <li><img src="images/port_img2_1.png" alt=""></li>
+                        <li><img src="images/port_img3_1.png" alt=""></li>
+                    </ul>
+                    <ul class="preview_detail_wrap">
+                        <li>
+                            <div class="preview_detail">
+                                <h5>re-design</h5>
+                                <div class="title_line"></div>
+                                <h4>포인핸드 어플리케이션</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="preview_detail">
+                                <h5>publishing</h5>
+                                <div class="title_line"></div>
+                                <h4>WIDMICE 홈페이지</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="preview_detail">
+                                <h5>publishing</h5>
+                                <div class="title_line"></div>
+                                <h4>포트폴리오 사이트</h4>
+                            </div>
+                        </li>
                     </ul>
 
-                    <div class="preview_detail">
-                        <h5>re-design</h5>
-                        <div class="title_line"></div>
-                        <h4>포인핸드 어플리케이션</h4>
-                    </div>
                     <div class="prev">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                        <a href="#">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </a>
+
                     </div>
                     <div class="next">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                        <a href="#">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -175,9 +203,9 @@
         <div class="portfolio">
             <div class="wrap">
                 <ul class="select">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                    <li class="select_port"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
                 </ul>
                 <div class="title">
                     <h3>02</h3>
@@ -187,32 +215,77 @@
                     <div class="con_image">
                         <ul class="images">
                             <li>
-                                <img src="images/port_img1.png" alt="">
+                                <img src="images/port_img1_2.png" alt="">
                             </li>
                         </ul>
                         <ul class="images_view">
-                            <li><a class="lightbox" href="images/port_prew1_1.png"></a></li>
-                            <li><a class="lightbox" href="images/port_prew1_2.png"></a></li>
-                            <li><a class="lightbox" href="images/port_prew1_3.png"></a></li>
+                            <li><a class="lightbox" href="images/port_prew1_1.png"><img src="images/prew1_1.png"
+                                        alt=""></a></li>
+                            <li><a class="lightbox" href="images/port_prew1_2.png"><img src="images/prew1_2.PNG"
+                                        alt=""></a></li>
+                            <li><a class="lightbox" href="images/port_prew1_3.png"><img src="images/prew1_3.png"
+                                        alt=""></a></li>
                         </ul>
                     </div>
                     <div class="con_detail">
-                        <h3><span>1</span>포인핸드 어플리케이션</h3>
-                        <p class="date">2019. 08. 20 ~ 2019. 09. 05</p>
-                        <div class="con_info">
-                            <p>지극히 기능을 위주로 만들어진 포인핸드 어플을 새롭게 디자인해보았습니다.</p>
-                            <p>기존 어플에 주어졌던 색 테마는 그대로 유지한 채 귀여운 디자인을 채용하고,</p>
-                            <p>게시판 종류를 최대한 정리하여 레이아웃을 좀 더 깔끔하게 바꿨습니다.</p>
-                        </div>
-                        <p class="con_work">디자인 100% | 코딩 100%</p>
-                        <div class="colors">
-                            <span>colors</span>
-                            <ul>
-                                <li><span>#4e9f81</span></li>
-                                <li><span>#73BF7C</span></li>
-                                <li><span>#E0A875</span></li>
-                            </ul>
-                        </div>
+                        <ul class="detail_wrap">
+                            <li>
+                                <h3><span>1</span>포인핸드 어플리케이션</h3>
+                                <p class="date">2019. 08. 20 ~ 2019. 09. 05</p>
+                                <div class="con_info">
+                                    <p>지극히 기능을 위주로 만들어진 포인핸드 어플을 새롭게 디자인해보았습니다.</p>
+                                    <p>기존 어플에 주어졌던 색 테마는 그대로 유지한 채 귀여운 디자인을 채용하고,</p>
+                                    <p>게시판 종류를 최대한 정리하여 레이아웃을 좀 더 깔끔하게 바꿨습니다.</p>
+                                </div>
+                                <p class="con_work">디자인 100% | 코딩 100%</p>
+                                <div class="colors">
+                                    <span>colors</span>
+                                    <ul>
+                                        <li><span>#4e9f81</span></li>
+                                        <li><span>#73BF7C</span></li>
+                                        <li><span>#E0A875</span></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h3><span>2</span>WIDMICE 홈페이지</h3>
+                                <p class="date">2019. 09. 28 ~ 2019. 10. 13</p>
+                                <div class="con_info">
+                                    <p>mice 산업 회사 이미지에 맞게 깔끔함을 모토로 하여 제작해보았습니다. </p>
+                                    <p>간단하게나마 모든 css를 scss로 처리하여 코딩하였고,</p>
+                                    <p>추가로 그누보드를 이용하여 회원가입, 로그인 기능등을 구현했습니다.</p>
+                                </div>
+                                <p class="con_work">디자인 80% | 코딩 100%</p>
+                                <div class="colors">
+                                    <span>colors</span>
+                                    <ul>
+                                        <li><span>#031D3E</span></li>
+                                        <li><span>#3288B4</span></li>
+                                        <li><span>#F5F2F2</span></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h3><span>3</span>포트폴리오 사이트</h3>
+                                <p class="date">2019. 12. 01 ~ 2019. 12. 04</p>
+                                <div class="con_info">
+                                    <p>세 가지 색을 기초로 최대한으로 깔끔하게 디자인, 퍼블리싱해보았습니다.</p>
+                                    <p>과도한 애니메이션은 줄이고 유저 사용성을 기초로 코딩하였고,</p>
+                                    <p>그럼에도 심심하다는 생각이 들지않도록 컨텐츠를 적절한 위치해 배치하였습니다. </p>
+                                </div>
+                                <p class="con_work">디자인 100% | 코딩 100%</p>
+                                <div class="colors">
+                                    <span>colors</span>
+                                    <ul>
+                                        <li><span>#96C7DE</span></li>
+                                        <li><span>#4A4646</span></li>
+                                        <li><span>#EEEEEE</span></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+
                     </div>
                 </div>
             </div>
